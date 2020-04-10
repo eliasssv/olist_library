@@ -6,7 +6,7 @@ class Author(models.Model):
     @since 2020-04-08
     @author eliasssv
     """
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, unique=True)
 
     def __str__(self):
         return self.name
@@ -19,7 +19,7 @@ class Book(models.Model):
     """
     name = models.CharField(max_length=255)
     publication_year = models.IntegerField()
-    edition = models.CharField(max_length=255)
+    edition = models.IntegerField()
     authors = models.ManyToManyField(Author, related_name="books") 
 
     def __str__(self):
