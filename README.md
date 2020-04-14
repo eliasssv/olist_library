@@ -65,7 +65,7 @@ py manage.py createsuperuser
 py manage.py runserver
 ```
 - In your Browser access this link: http://127.0.0.1:8000/admin
-- Should appear and login page, log in.
+- Should appear a login page, log in.
 
 ## 7 - Access and use the API
 - The API's local endpoints are: 
