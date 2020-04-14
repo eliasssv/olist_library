@@ -6,7 +6,7 @@ from django.db.utils import IntegrityError
 class Command(BaseCommand):
     """
     Custom command for manage.py - Import Authors from a .csv file
-    Example: py manage.py import_authors <csv_file_name.csv>
+    \nExample: py manage.py import_authors <csv_file_name.csv>
     \n@since 2020-04-09
     \n@author eliasssv
     """

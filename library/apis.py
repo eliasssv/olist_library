@@ -16,7 +16,7 @@ class AuthorViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         """
         Optionally restricts the returned list containing the name of the Author 
-        \n@authoreters: name (string)
+        \n@param: name (string)
         \n@since: 2020-04-08
         \n@author: eliasssv
         """
@@ -39,7 +39,11 @@ class BookViewSet(viewsets.ModelViewSet):
         """
         Optionally restricts the returned list containing the name, publication_year, edition, 
         author_name, author_id
-        \n@authoreters: name (string)
+        \n@param: name (string)
+        \n@param: publication_year (int)
+        \n@param: edition (int)
+        \n@param: author_name (string)
+        \n@param: author_id (int)
         \n@since: 2020-04-09
         \n@author: eliasssv
         """

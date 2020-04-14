@@ -5,7 +5,7 @@ from django.db.models import ObjectDoesNotExist
 def generic_setUp(objects_to_create):
     """
     Generic setUp
-    \n@author objects_to_create : List of objects to save in database
+    \n@param objects_to_create : List of objects to save in database
     \n@since 2020-04-13
     \n@author eliasssv
     """
@@ -15,8 +15,8 @@ def generic_setUp(objects_to_create):
 def generic_get(self, model, objects_to_get):
     """
     Generic Get
-    \n@author model : Class of the model
-    \n@author objects_to_create : List dict with:
+    \n@param model : Class of the model
+    \n@param objects_to_create : List dict with:
         {
             search_field: name of the field search,
             search_value: value of the search field,
@@ -35,7 +35,7 @@ def generic_get(self, model, objects_to_get):
 def generic_delete(self, model, objects_to_delete):
     """
     Generic Delete
-    \n@author objects_to_delete : List of objects to delete in database
+    \n@param objects_to_delete : List of objects to delete in database
     \n@since 2020-04-13
     \n@author eliasssv
     """
