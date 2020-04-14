@@ -9,6 +9,9 @@ See more [here](https://github.com/olist/work-at-olist).
 
 # Heroku
 * This API is available in Heroku: https://olist-library.herokuapp.com/admin - you must request a login.
+## Endpoints:
+* Authors: https://olist-library.herokuapp.com/v1/authors/
+* Books: https://olist-library.herokuapp.com/v1/books/
 
 # Steps:
 ## 1 - Install the requirements.txt
