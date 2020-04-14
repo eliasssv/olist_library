@@ -21,3 +21,4 @@ sqlparse==0.3.1
 static3==0.7.0
 urllib3==1.25.8
 wcwidth==0.1.9
+psycopg2
