@@ -72,3 +72,7 @@ py manage.py runserver
 - For Authors: http://127.0.0.1:8000/v1/authors/
 - For Books: http://127.0.0.1:8000/v1/books/
 - NOTE: All methods implemented (GET, POST, PUT and DELETE):
+
+## 8 - TODO
+- Alter the ManyToMany relation beetwen Authors and Books to a ForeignKey - like [this](https://stackoverflow.com/questions/4825815/prevent-delete-in-django-model). Because Django allows delete an Author when it is related to a Book.
+- Develop more tests with invalids requests.
