@@ -3,8 +3,8 @@ from django.db import models
 class Author(models.Model):
     """
     Model of Author
-    @since 2020-04-08
-    @author eliasssv
+    \n@since 2020-04-08
+    \n@author eliasssv
     """
     name = models.CharField(max_length=255, unique=True)
 
@@ -14,8 +14,8 @@ class Author(models.Model):
 class Book(models.Model):
     """
     Model of Book
-    @since 2020-04-08
-    @author eliasssv
+    \n@since 2020-04-08
+    \n@author eliasssv
     """
     name = models.CharField(max_length=255)
     publication_year = models.IntegerField()

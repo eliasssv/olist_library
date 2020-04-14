@@ -7,8 +7,8 @@ class Command(BaseCommand):
     """
     Custom command for manage.py - Import Authors from a .csv file
     Example: py manage.py import_authors <csv_file_name.csv>
-    @since 2020-04-09
-    @author eliasssv
+    \n@since 2020-04-09
+    \n@author eliasssv
     """
     help = 'Import many authors from .csv file'
 

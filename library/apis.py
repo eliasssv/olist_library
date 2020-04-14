@@ -6,8 +6,8 @@ from .serializers import AuthorSerializer, BookSerializer
 class AuthorViewSet(viewsets.ModelViewSet):
     """
     API of Author
-    @since 2020-04-08
-    @author eliasssv
+    \n@since 2020-04-08
+    \n@author eliasssv
     """
     queryset = Author.objects.all().order_by('name')
     serializer_class = AuthorSerializer
@@ -16,9 +16,9 @@ class AuthorViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         """
         Optionally restricts the returned list containing the name of the Author 
-        @parameters: name (string)
-        @since: 2020-04-08
-        @author: eliasssv
+        \n@authoreters: name (string)
+        \n@since: 2020-04-08
+        \n@author: eliasssv
         """
         name = self.request.query_params.get('name', None)
         if name is not None:
@@ -28,8 +28,8 @@ class AuthorViewSet(viewsets.ModelViewSet):
 class BookViewSet(viewsets.ModelViewSet):
     """
     API of Book
-    @since 2020-04-08
-    @author eliasssv
+    \n@since 2020-04-08
+    \n@author eliasssv
     """
     queryset = Book.objects.all().order_by('name')
     serializer_class = BookSerializer
@@ -39,9 +39,9 @@ class BookViewSet(viewsets.ModelViewSet):
         """
         Optionally restricts the returned list containing the name, publication_year, edition, 
         author_name, author_id
-        @parameters: name (string)
-        @since: 2020-04-09
-        @author: eliasssv
+        \n@authoreters: name (string)
+        \n@since: 2020-04-09
+        \n@author: eliasssv
         """
         name = self.request.query_params.get('name', None)
         publication_year = self.request.query_params.get('publication_year', None)

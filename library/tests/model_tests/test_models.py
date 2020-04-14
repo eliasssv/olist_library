@@ -1,12 +1,12 @@
 from django.test import TestCase
-from ..models import Author, Book
-from .generics import generic_setUp, generic_get, generic_delete
+from library.models import Author, Book
+from .model_tests_generic import generic_setUp, generic_get, generic_delete
 
 class AuthorTest(TestCase):
     """
     Tests Model of Author
-    @since 2020-04-13
-    @author eliasssv
+    \n@since 2020-04-13
+    \n@author eliasssv
     """
     def setUp(self):
         generic_setUp([Author(name='API TEST 1'), Author(name='API TEST 2')])
@@ -34,8 +34,8 @@ class AuthorTest(TestCase):
 class BookTest(TestCase):
     """
     Tests Model of Book
-    @since 2020-04-13
-    @author eliasssv
+    \n@since 2020-04-13
+    \n@author eliasssv
     """
     def setUp(self):
         author_1 = Author.objects.create(name='API TEST 1')

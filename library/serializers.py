@@ -4,18 +4,18 @@ from .models import Author, Book
 class AuthorSerializer(serializers.HyperlinkedModelSerializer):
     """
     Serializer of Author
-    @since 2020-04-08
-    @author eliasssv
+    \n@since 2020-04-08
+    \n@author eliasssv
     """
     class Meta:
         model = Author
-        fields = ['id', 'name', 'books']
+        fields = ['id', 'name']
 
 class BookSerializer(serializers.HyperlinkedModelSerializer):
     """
     Serializer of Book
-    @since 2020-04-08
-    @author eliasssv
+    \n@since 2020-04-08
+    \n@author eliasssv
     """
     class Meta:
         model = Book

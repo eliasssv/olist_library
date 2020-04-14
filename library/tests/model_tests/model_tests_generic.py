@@ -5,9 +5,9 @@ from django.db.models import ObjectDoesNotExist
 def generic_setUp(objects_to_create):
     """
     Generic setUp
-    @param objects_to_create : List of objects to save in database
-    @since 2020-04-13
-    @author eliasssv
+    \n@author objects_to_create : List of objects to save in database
+    \n@since 2020-04-13
+    \n@author eliasssv
     """
     for obj in objects_to_create:
         obj.save()
@@ -15,16 +15,16 @@ def generic_setUp(objects_to_create):
 def generic_get(self, model, objects_to_get):
     """
     Generic Get
-    @param model : Class of the model
-    @param objects_to_create : List dict with:
+    \n@author model : Class of the model
+    \n@author objects_to_create : List dict with:
         {
             search_field: name of the field search,
             search_value: value of the search field,
             compare_field: name of the field to compare,
             compare_value: value of the comparation,
         }
-    @since 2020-04-13
-    @author eliasssv
+    \n@since 2020-04-13
+    \n@author eliasssv
     """
     for obj in objects_to_get:
         kwargs = {}
@@ -35,9 +35,9 @@ def generic_get(self, model, objects_to_get):
 def generic_delete(self, model, objects_to_delete):
     """
     Generic Delete
-    @param objects_to_delete : List of objects to delete in database
-    @since 2020-04-13
-    @author eliasssv
+    \n@author objects_to_delete : List of objects to delete in database
+    \n@since 2020-04-13
+    \n@author eliasssv
     """
     for obj in objects_to_delete:
         obj.delete()
