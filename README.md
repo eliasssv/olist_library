@@ -36,7 +36,7 @@ py manage.py import_authors authors.csv
 - NOTE: you can import your own authors using a .csv file 
 
 ## 4 - Run tests
-- Run the tests
+- Run the tests:
 ```
 py manage.py test
 ```
@@ -57,7 +57,7 @@ Destroying test database for alias 'default'...
 ```
 py manage.py createsuperuser
 ```
-- Answer the questions and memorize your user/password
+- Answer the questions and memorize your user/password.
 
 ## 6 - Run server and login
 - Run the command:
@@ -65,9 +65,10 @@ py manage.py createsuperuser
 py manage.py runserver
 ```
 - In your Browser access this link: http://127.0.0.1:8000/admin
-vc. Should appear and login page, log in.
+- Should appear and login page, log in.
 
 ## 7 - Access and use the API
-- The API's local endpoints are - All methods implemented (GET, POST, PUT and DELETE):
+- The API's local endpoints are: 
 - For Authors: http://127.0.0.1:8000/v1/authors/
 - For Books: http://127.0.0.1:8000/v1/books/
+- NOTE: All methods implemented (GET, POST, PUT and DELETE):
